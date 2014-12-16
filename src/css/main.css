@@ -2,8 +2,7 @@
 @import url('http://fonts.googleapis.com/css?family=Carme');
 @import url('http://fonts.googleapis.com/css?family=News+Cycle:700');
 div.goog-bubble-content.gc-reset {
-  box-shadow: 7px 7px 3px #888;
-  border: 1px solid #888 !important;
+  box-shadow: 10px 10px 5px #888;
 }
 body {
   color: #787878;
