@@ -1,48 +1,49 @@
 .view {
-    cursor: default;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-}
-.view .mask,.view .content {
-   height: 200px;
-   position: absolute;
-   overflow: hidden;
-   top: 0;
-   left: 0;
+  cursor: default;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
 }
 .view img {
-   display: block;
-   position: relative;
+  display: block;
+  position: relative;
 }
 .view h3 {
-   text-transform: uppercase;
-   color: #fff;
-   text-align: center;
-   position: relative;
-   font-size: 16px;
-   padding-left: 15px;
-   padding-right: 15px;
-   margin: 20px 0 0 0;
-   line-height: 1.3em;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 20px 0 0 0;
+  line-height: 1.3em;
 }
 .view p {
-   font-family: Arial, serif;
-   font-size: 11px;
-   position: relative;
-   color: #fff;
-   padding:  5px 15px 0px 15px;
-   text-align: justify;
+  font-family: Arial, serif;
+  font-size: 11px;
+  position: relative;
+  color: #fff;
+  padding: 5px 15px 0px 15px;
+  text-align: justify;
 }
 .view a.info {
-    color: #0079c2;
-    display: inline-block;
-    text-decoration: none;
-    margin-top: -10px;
-    text-transform: uppercase;
+  color: #0079c2;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: -10px;
+  text-transform: uppercase;
 }
-.view a.info: hover {
-   -webkit-box-shadow: 0 0 5px #000;
-   -moz-box-shadow: 0 0 5px #000;
-   box-shadow: 0 0 5px #000;
+.view a.info:hover {
+  -webkit-box-shadow: 0 0 5px #000;
+  -moz-box-shadow: 0 0 5px #000;
+  box-shadow: 0 0 5px #000;
+}
+.view .mask,
+.view .content {
+  height: 200px;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
 }
