@@ -46,7 +46,7 @@
       </li>
       <!--<li><a href="./aboutus.html" >About Us</a></li>-->
      </ul>
-     <div style="font-size:14px; text-align:center; font-family: Droid sans, sans-serif; color: #AEAE;">CALL US AT: 1-856-722-0808</div>
+     <div style="font-size:14px; text-align:center; font-family: Droid sans, sans-serif; color: #AEAEAE;">CALL US AT: 1-856-722-0808</div>
     </nav>
    </div>
   </div>
@@ -62,36 +62,46 @@
    
    <div class="container form application">
     <div class="row-fluid clearfix">
+     <div class="col-xs-12">
+      <h2 class="form-section-header">Contact Information</h2>
+      <hr/>
+     </div>
+    </div>
+    <div class="row-fluid clearfix">
      <form class="form-horizontal">
       <div class="form-group">
     <label for="inputEmail3" class="col-sm-2 col-sm-offset-3 control-label">First Name:</label>
     <div class="col-sm-3">
-      <input name="txtfirstname" type="text" class="form-control" id="txtfirstname" placeholder="Email">
+      <input name="txtfirstname" type="text" class="form-control" id="txtfirstname" placeholder="">
       <span data-val-controltovalidate="txtfirstname" data-val-errormessage="Required" id="rffirst" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
     </div>
   </div><!--jpg done-->
       
-      <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 col-sm-offset-3 control-label">Last Name:</label>
+   <div class="form-group">
+    <label for="txtlastname" class="col-sm-2 col-sm-offset-3 control-label">Last Name:</label>
     <div class="col-sm-3">
-      <input name="txtlastname" type="text" class="form-control" id="txtlastname" placeholder="Password">
+      <input name="txtlastname" type="text" class="form-control" id="txtlastname" placeholder="">
       <span data-val-controltovalidate="txtlastname" data-val-errormessage="Required" id="rflastname" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
     </div>
   </div>
-      <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label>
-          <input type="checkbox"> Remember me
-        </label>
-      </div>
+   <div class="form-group">
+    <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">Email:</label>
+    <div class="col-sm-3">
+      <input name="txtlastname" type="text" class="form-control" id="txtphone" placeholder="">
+      <span data-val-controltovalidate="txtphone" data-val-errormessage="Required" id="rfphone" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
+      <span data-val-controltovalidate="txtphone" data-val-errormessage="xxx-xxx-xxxx" id="regexphone" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^\d{3}-\d{3}-\d{4}$" style="visibility:hidden;">xxx-xxx-xxxx</span>
     </div>
   </div>
-      <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <button type="submit" class="btn btn-default">Sign in</button>
+   <div class="form-group">
+    <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">Confirm Email:</label>
+    <div class="col-sm-3">
+      <input name="txtconfirmemail" type="text" class="form-control" id="txtconfirmemail" placeholder="">
+      <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Required" id="RequiredFieldValidator1" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="">Required</span>
+      <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same</span>
     </div>
   </div>
+
+
      </form>
 <!--
      <form class="form-horizontal">
@@ -290,6 +300,14 @@
 -->
     
      </div>
+    <div class="row-fluid clearfix">
+     <div class="col-xs-12">
+      <h2 class="form-section-header">Location</h2>
+      <hr/>
+     </div>
+    </div>
+
+    
   
  
    </div>
