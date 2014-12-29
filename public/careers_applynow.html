@@ -17,6 +17,7 @@
  <link rel="stylesheet" type="text/css" href="css/style_common.css" />
  <link rel="stylesheet" type="text/css" href="css/style5.css" />
  <link rel="stylesheet" type="text/css" href="css/style_form.css" />
+ <script type="text/javascript" async="" src="http://remote.captcha.com/include.js?i=ATABMAEwATMBMAIxNhQqfJFoRv-JH88T9XbBT63mk2kFGw"></script>
 
 
 </head>
@@ -51,20 +52,18 @@
    </div>
   </div>
  </header>
- <section>
- </section>
  <section id="container">
   <div class="container">
    <section id="welcome">
     <h1>YOU ARE MAKING A GREAT DECISION</h1>
     <p>Once again, this is why you are making such a great decision to work here. Make sure you fill out all the required fields. And remember to upload your resume before clicking the submit button!</p>
    </section>
-   
    <div class="container form application">
-    
-    
+
+
     <div class="row-fluid clearfix">
      <form class="form-horizontal">
+      
       <div class="row-fluid clearfix">
      <div class="col-xs-12">
       <h2 class="form-section-header">Contact Information</h2>
@@ -85,6 +84,7 @@
       <input name="txtlastname" type="text" class="form-control" id="txtlastname" placeholder="">
       <span data-val-controltovalidate="txtlastname" data-val-errormessage="Required" id="rflastname" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
     </div>
+
   </div><!--jpg done-->
       <div class="form-group">
     <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">Email:</label>
@@ -102,28 +102,62 @@
       <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same</span>
     </div>
   </div><!--jpg done-->
-      
-     <div class="row-fluid clearfix">
+
+     </form>
+    </div>
+
+      <div class="row-fluid clearfix">
      <div class="col-xs-12">
       <h2 class="form-section-header">Location</h2>
       <hr/>
      </div>
     </div>
+      
+        <div class="form-group">
+    <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
+    <div class="col-sm-3">
+      <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
+    </div>
+  </div>
+
+     <div class="form-group">
+    <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label">Security Code:</label>
+    <div class="col-sm-3">
+      <div class="LBD_CaptchaDiv " id="c_contactform_captchabox_CaptchaDiv" style="width: 280px !important; height: 50px !important; "><!--
+       --><div class="LBD_CaptchaImageDiv" id="c_contactform_captchabox_CaptchaImageDiv" style="width: 250px !important; height: 50px !important;"><!--
+         --><a target="_blank" href="http://captcha.com/asp.net-captcha-info.html" title="BotDetect CAPTCHA ASP.NET Form Validation" onclick="c_contactform_captchabox.OnHelpLinkClick(); return c_contactform_captchabox.FollowHelpLink;"><img class="LBD_CaptchaImage" id="c_contactform_captchabox_CaptchaImage" src="/patientstardotcomnew/(X(1)S(d5smf2prazbs1uhkf0sauwhr))/BotDetectCaptcha.ashx?get=image&amp;c=c_contactform_captchabox&amp;t=88825fa5b0144d8d90766b2af680452c" alt="CAPTCHA"></a><!--
+       --></div><!--
+       --><div class="LBD_CaptchaIconsDiv" id="c_contactform_captchabox_CaptchaIconsDiv" style="width: 24px !important;"><!--
+         --><a class="LBD_ReloadLink" id="c_contactform_captchabox_ReloadLink" href="#" onclick="c_contactform_captchabox.ReloadImage(); this.blur(); return false;" title="Change the CAPTCHA code" style="display: inline-block !important;"><img class="LBD_ReloadIcon" id="c_contactform_captchabox_ReloadIcon" src="/patientstardotcomnew/BotDetectCaptcha.ashx?get=ReloadIcon" alt="Change the CAPTCHA code"></a><!--
+         --><a class="LBD_SoundLink" id="c_contactform_captchabox_SoundLink" href="/patientstardotcomnew/(X(1)S(d5smf2prazbs1uhkf0sauwhr))/BotDetectCaptcha.ashx?get=sound&amp;c=c_contactform_captchabox&amp;t=88825fa5b0144d8d90766b2af680452c&amp;s=kNjkFB2dIs0M6MMZPP%2fzwpmeOayCgv6pmStvPasas%2bpgEym5F2kdLr3Oemi%2b8AmXDMWf%2fKsrXeliKdm1XbsOZg%3d%3d" onclick="c_contactform_captchabox.PlaySound(); this.blur(); return false;" title="Speak the CAPTCHA code"><img class="LBD_SoundIcon" id="c_contactform_captchabox_SoundIcon" src="/patientstardotcomnew/BotDetectCaptcha.ashx?get=SoundIcon" alt="Speak the CAPTCHA code"></a><!--
+         --><div class="LBD_Placeholder" id="c_contactform_captchabox_AudioPlaceholder">&nbsp;</div><!--
+       --></div>
+          <script src="/patientstardotcomnew/BotDetectCaptcha.ashx?get=clientScriptInclude" type="text/javascript"></script>
+          <script type="text/javascript">
+          //<![CDATA[
+            BotDetect.Init('c_contactform_captchabox', '88825fa5b0144d8d90766b2af680452c', null, true, true, true, true, 1200, 7200, 0, true);
+          //]]>
+          </script>
+          <script type="text/javascript">
+          //<![CDATA[
+            try{(function(){var bdrsn = document.createElement('script'); bdrsn.type = 'text/javascript'; bdrsn.async = true; bdrsn.src = document.location.protocol + '//remote.captcha.com/include.js?i=ATABMAEwATMBMAIxNhQqfJFoRv-JH88T9XbBT63mk2kFGw'; var fsn = document.getElementsByTagName('script')[0]; fsn.parentNode.insertBefore(bdrsn, fsn);})();} catch(err){}
+          //]]>
+          </script>
+          <input type="hidden" name="LBD_VCID_c_contactform_captchabox" id="LBD_VCID_c_contactform_captchabox" value="88825fa5b0144d8d90766b2af680452c">
+          <input type="hidden" name="LBD_BackWorkaround_c_contactform_captchabox" id="LBD_BackWorkaround_c_contactform_captchabox" value="1">
+        </div>
+      <input name="captcha" type="text" class="form-control" id="captcha" placeholder="Security Code">
+    </div>
+  </div>
 
      </form>
     </div>
-    
 
-    
-    
-  
- 
    </div>
-   
-</div>
 
+  </div>
+ </section>
 
-</section>
 <a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
         <!--footer-->
         <footer id="footer">
