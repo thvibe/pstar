@@ -64,7 +64,7 @@
     <div class="row-fluid clearfix">
      <form class="form-horizontal">
       
-      <div class="row-fluid clearfix">
+      <div class="row clearfix">
      <div class="col-xs-12">
       <h2 class="form-section-header">Contact Information</h2>
       <hr/>
@@ -103,12 +103,13 @@
     </div>
   </div><!--jpg done-->
       
-      <div class="row-fluid clearfix">
+      <div class="row clearfix">
      <div class="col-xs-12">
       <h2 class="form-section-header">Location</h2>
       <hr/>
      </div>
     </div>
+      
       <div class="form-group">
        <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">City:</label>
        <div class="col-sm-3">
@@ -116,13 +117,93 @@
         <span data-val-controltovalidate="txtcity" data-val-errormessage="Required" id="rfcity" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>       
        </div>
       </div><!--jpg done-->
+      <div class="form-group">
+       <label for="" class="col-sm-2 col-sm-offset-3 control-label">Country:</label>
+       <div class="col-sm-3">
+        <select name="ddlcountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlcountry" class="form-control">
+         <option selected="selected" value="-1">Select</option>
+         <option value="US">US</option>
+         <option value="Can">Can</option>
+        	<option value="Other">Other</option>        
+       	</select>
+        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>       
+       </div>
+      </div><!--jpg done-->
+      <div class="form-group">
+       <label for="" class="col-sm-2 col-sm-offset-3 control-label">State:</label>
+       <div class="col-sm-3">
+        <select name="ddlstate" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlstate" class="form-control">
+         <option selected="selected" value="-1">Select</option>        
+       	</select>
+        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>       
+       </div>
+      </div><!--jpg done-->
+      
+      <div class="row clearfix">
+       <div class="col-xs-12">
+        <h2 class="form-section-header">Education</h2>
+        <hr/>
+       </div>
+      </div>
+      
+      <div class="form-group">
+       <label for="ddleducation" class="col-sm-3 col-sm-offset-2 control-label label-long">Highest Level of Post-Secondary Education(Select most appropriate):</label>
+       <div class="col-sm-3">
+        <select name="ddleducation" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddleducation" class="form-control">
+         <option value="-1">Select</option>
+        	<option value="US 2-Year Degree">US 2-Year Degree</option>
+        	<option value="US 4-Year Degree">US 4-Year Degree</option>
+        	<option value="US More than 4-Year Degree">US More than 4-Year Degree</option>
+        	<option value="Foreign Degree">Foreign Degree</option>
+        	<option value="No degree">No degree</option>
+        	<option value="Other">Other</option>
+       	</select>
+        <span data-val-controltovalidate="ddleducation" data-val-errormessage="Required" id="rfeducation" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>       
+       </div>
+      </div><!--jpg done-->
+      <div class="form-group">
+       <label for="" class="col-sm-2 col-sm-offset-3 control-label">Other:</label>
+       <div class="col-sm-3">
+        <input name="txteducationother" type="text" class="form-control" id="txteducationother" placeholder="">
+       </div>
+      </div><!--jpg done-->
+
+      <div class="row clearfix">
+       <div class="col-xs-12">
+        <h2 class="form-section-header">License & Cerfications</h2>
+        <hr/>
+       </div>
+      </div>
+      
+      <div class="form-group">
+       <label for="ddlmedicallicense" class="col-sm-2 col-sm-offset-3 control-label">Medical License Type:</label>
+       <div class="col-sm-3">
+        <select name="ddlmedicallicense" id="ddlstate" class="form-control">
+         <option value="-1">Please Select</option>
+        	<option value="MD/DO">MD/DO</option>
+        	<option value="RPh/PharmD">RPh/PharmD</option>
+        	<option value="RN">RN</option>
+        	<option value="LPN/LVN">LPN/LVN</option>
+        	<option value="Other Medical License">Other Medical License</option>
+	       </select>
+	       <span data-val-controltovalidate="ddlmedicallicense" data-val-errormessage="Required" id="rfmedicallicense" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
+       </div>
+      </div><!--jpg done-->
+      <div class="form-group">
+       <label for="txtmedicalother" class="col-sm-3 col-sm-offset-2 control-label label-long">Other License of Certification (If any, please specify):</label>
+       <div class="col-sm-3">
+        <input name="txtmedicalother" type="text" class="form-control" id="txtmedicalother" placeholder="">
+        <span data-val-controltovalidate="txtmedicalother" data-val-errormessage="Required" id="rfmedicalother" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
+       </div>
+      </div><!--jpg done-->
+
 
       <div class="form-group">
-    <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
-    <div class="col-sm-3">
-      <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
-    </div>
-  </div>
+       <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
+       <div class="col-sm-3">
+         <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
+       </div>
+     </div><!--jpg done-->
       <div class="form-group">
     <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label">Security Code:</label>
     <div class="col-sm-3">
@@ -151,7 +232,7 @@
         </div>
       <input name="captcha" type="text" class="form-control" id="captcha" placeholder="Security Code">
     </div>
-  </div>
+  </div><!--jpg done-->
       
      </form>
     </div>

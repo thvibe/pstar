@@ -17,6 +17,9 @@ section,
 article {
   display: block;
 }
+.label-long {
+  margin-top: -10px;
+}
 .form-section-header {
   color: #0079c2;
 }
