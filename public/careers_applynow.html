@@ -63,8 +63,9 @@
 
     <div class="row-fluid clearfix">
      <form class="form-horizontal">
-      
+
       <div class="row clearfix">
+
      <div class="col-xs-12">
       <h2 class="form-section-header">Contact Information</h2>
       <hr/>
@@ -102,19 +103,20 @@
       <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same</span>
     </div>
   </div><!--jpg done-->
-      
+
       <div class="row clearfix">
+
      <div class="col-xs-12">
       <h2 class="form-section-header">Location</h2>
       <hr/>
      </div>
     </div>
-      
+
       <div class="form-group">
        <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">City:</label>
        <div class="col-sm-3">
         <input name="txtcity" type="text" class="form-control" id="txtcity" placeholder="">
-        <span data-val-controltovalidate="txtcity" data-val-errormessage="Required" id="rfcity" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>       
+        <span data-val-controltovalidate="txtcity" data-val-errormessage="Required" id="rfcity" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
@@ -124,28 +126,28 @@
          <option selected="selected" value="-1">Select</option>
          <option value="US">US</option>
          <option value="Can">Can</option>
-        	<option value="Other">Other</option>        
+        	<option value="Other">Other</option>
        	</select>
-        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>       
+        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
        <label for="" class="col-sm-2 col-sm-offset-3 control-label">State:</label>
        <div class="col-sm-3">
         <select name="ddlstate" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlstate" class="form-control">
-         <option selected="selected" value="-1">Select</option>        
+         <option selected="selected" value="-1">Select</option>
        	</select>
-        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>       
+        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
-      
+
       <div class="row clearfix">
        <div class="col-xs-12">
         <h2 class="form-section-header">Education</h2>
         <hr/>
        </div>
       </div>
-      
+
       <div class="form-group">
        <label for="ddleducation" class="col-sm-3 col-sm-offset-2 control-label label-long">Highest Level of Post-Secondary Education(Select most appropriate):</label>
        <div class="col-sm-3">
@@ -158,7 +160,7 @@
         	<option value="No degree">No degree</option>
         	<option value="Other">Other</option>
        	</select>
-        <span data-val-controltovalidate="ddleducation" data-val-errormessage="Required" id="rfeducation" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>       
+        <span data-val-controltovalidate="ddleducation" data-val-errormessage="Required" id="rfeducation" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
@@ -168,13 +170,14 @@
        </div>
       </div><!--jpg done-->
 
+
       <div class="row clearfix">
        <div class="col-xs-12">
          <h2 class="form-section-header">License & Certifications</h2>
         <hr/>
        </div>
       </div>
-      
+
       <div class="form-group">
        <label for="ddlmedicallicense" class="col-sm-2 col-sm-offset-3 control-label">Medical License Type:</label>
        <div class="col-sm-3">
@@ -268,21 +271,21 @@
        <div class="col-sm-3">
         <select name="ddlactivelicense" id="ddlactivelicense" class="form-control">
          <option value="Yes">Yes</option>
-         <option value="No">No</option>	       
+         <option value="No">No</option>
         </select>
 	       <span data-val-controltovalidate="ddlmedicallicense" data-val-errormessage="Required" id="rfmedicallicense" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
-      
+
       <div class="row clearfix">
        <div class="col-xs-12">
          <h2 class="form-section-header">Language</h2>
         <hr/>
        </div>
       </div>
-      
+
       <div class="form-group">
-       <label for="ddllanguagesecondary" class="col-sm-3 col-sm-offset-2 control-label label-long">Fluent in an another language besides English, please select one (Choose English only, if not bilingual):</label>
+       <label for="ddllanguagesecondary" class="col-sm-3 col-sm-offset-2 control-label">Fluent in an another language besides English, please select one (Choose English only, if not bilingual):</label>
        <div class="col-sm-3">
         <select name="ddllanguagesecondary" id="ddllanguagesecondary" class="form-control">
         	<option value="-1">Select</option>
@@ -378,6 +381,354 @@
        </div>
      </div>
       <div class="form-group">
+
+  <div class="row clearfix">
+    <div class="col-xs-12">
+      <h2 class="form-section-header">Hours of Availability</h2>
+      <hr/>
+      <p>We have a flexible scheduling model that allows for increments of one hour. This will give us an idea of how your availability matches up with the scheduling needs.</p>
+      <p>Next to each time range below, please indicate the total number of hours on average you
+      could make yourself available, in a typical work week. All times are based on Eastern Standard Time zone.</p>
+      <h3>Weekdays</h3>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWD8to12pm" class="col-sm-3 col-sm-offset-2 control-label">8am to 12pm:</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWD8to12pm" id="ddlWD8to12pm">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWD12to4pm" class="col-sm-3 col-sm-offset-2 control-label">12pm to 4pm:</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWD12to4pm" id="ddlWD12to4pm">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWD4to8pm" class="col-sm-3 col-sm-offset-2 control-label">4pm to 8pm:</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWD4to8pm" id="ddlWD4to8pm">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWD8to12am" class="col-sm-3 col-sm-offset-2 control-label">8pm to 12am:</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWD8to12am" id="ddlWD8to12am">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWD12to4am" class="col-sm-3 col-sm-offset-2 control-label">12am to 4am:</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWD12to4am" id="ddlWD12to4am">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWD4to8am" class="col-sm-3 col-sm-offset-2 control-label">4am to 8am:</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWD4to8am" id="ddlWD4to8am">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+      </select>
+    </div>
+  </div>
+  <div class="row clearfix">
+    <div class="col-xs-12">
+      <h3>Weekends</h3>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWE12to8pm" class="col-sm-3 col-sm-offset-2 control-label">12pm to 8pm (Daytime):</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWE12to8pm" id="ddlWE12to8pm">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWE12to8am" class="col-sm-3 col-sm-offset-2 control-label">12am to 8am (Overnight):</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWE12to8am" id="ddlWE12to8am">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="12">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWE8to12pm" class="col-sm-3 col-sm-offset-2 control-label">8am to 12pm (Morning):</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWE8to12pm" id="ddlWE8to12pm">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlWE8to12am" class="col-sm-3 col-sm-offset-2 control-label">8pm to 12am (Evening):</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlWE8to12am" id="ddlWE8to12am">
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row clearfix">
+    <div class="col-xs-12">
+      <h2 class="form-section-header">Terms</h2>
+      <hr/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlunderstand" class="col-sm-3 col-sm-offset-2 control-label label-long"> I understand that this is an Independent Contractor Position (yes/no):</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlunderstand" id="ddlunderstand">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlreference" class="col-sm-3 col-sm-offset-2 control-label label-long">Can you provide at least one manager or supervisor reference, from employment in a healthcare setting?</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlreference" onchange="javascript:setTimeout('__doPostBack(\'ddlreference\',\'\')', 0)" id="ddlreference">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtreference" class="col-sm-3 col-sm-offset-2 control-label label-long">If no, please describe the type of professional reference you can provide?</label>
+    <div class="col-sm-3">
+      <input name="txtreference" type="text" id="txtreference" class="form-control">
+      <span data-val-controltovalidate="txtreference" data-val-errormessage="Required" data-val-enabled="False" id="rfreference" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddllegallywork" class="col-sm-3 col-sm-offset-2 control-label label-long">I can legally work in the US or Canada (yes/no):</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddllegallywork" onchange="javascript:setTimeout('__doPostBack(\'ddllegallywork\',\'\')', 0)" id="ddllegallywork">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtlegalcountry" class="col-sm-3 col-sm-offset-2 control-label label-long">If no, what country can you legally work?</label>
+    <div class="col-sm-3">
+      <input class="form-control" name="txtlegalcountry" type="text" id="txtlegalcountry">
+      <span data-val-controltovalidate="txtlegalcountry" data-val-errormessage="Required" data-val-enabled="False" id="rflegalcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
+    </div>
+  </div>
+
+  <div class="row clearfix">
+    <div class="col-xs-12">
+      <h2 class="form-section-header">Submission</h2>
+      <hr/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="ddlsource" class="col-sm-3 col-sm-offset-2 control-label">How did you hear about us?</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="ddlsource" id="ddlsource">
+          <option value="-1">Select</option>
+          <option value="Craigslist Ad">Craigslist Ad</option>
+          <option value="Google Search">Google Search</option>
+          <option value="Monster.com">Monster.com</option>
+          <option value="Other internet search">Other internet search</option>
+          <option value="Word of Mouth">Worth of Mouth</option>
+          <option value="Other">Other</option>
+        </select>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="furesume" class="col-sm-2 col-sm-offset-3 control-label label-long">Upload Resume/CV (PDF, DOC, DOCX):</label>
+    <div class="col-sm-3">
+      <span class="btn btn-primary btn-file">Choose File<input type="file" class="form-control" id="furesume"></span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
+    <div class="col-sm-3">
+      <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
+    </div>
+  </div>
+  <div class="form-group">
+
     <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label">Security Code:</label>
     <div class="col-sm-3">
       <div class="LBD_CaptchaDiv " id="c_contactform_captchabox_CaptchaDiv" style="width: 280px !important; height: 50px !important; "><!--
@@ -405,12 +756,13 @@
         </div>
       <input name="captcha" type="text" class="form-control" id="captcha" placeholder="Security Code">
     </div>
+
   </div>
-      
+
      </form>
     </div>
 
-      
+
 
      </form>
     </div>
