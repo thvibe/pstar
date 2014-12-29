@@ -102,25 +102,28 @@
       <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same</span>
     </div>
   </div><!--jpg done-->
-
-     </form>
-    </div>
-
+      
       <div class="row-fluid clearfix">
      <div class="col-xs-12">
       <h2 class="form-section-header">Location</h2>
       <hr/>
      </div>
     </div>
-      
-        <div class="form-group">
+      <div class="form-group">
+       <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">City:</label>
+       <div class="col-sm-3">
+        <input name="txtcity" type="text" class="form-control" id="txtcity" placeholder="">
+        <span data-val-controltovalidate="txtcity" data-val-errormessage="Required" id="rfcity" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>       
+       </div>
+      </div><!--jpg done-->
+
+      <div class="form-group">
     <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
     <div class="col-sm-3">
       <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
     </div>
   </div>
-
-     <div class="form-group">
+      <div class="form-group">
     <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label">Security Code:</label>
     <div class="col-sm-3">
       <div class="LBD_CaptchaDiv " id="c_contactform_captchabox_CaptchaDiv" style="width: 280px !important; height: 50px !important; "><!--
@@ -149,6 +152,11 @@
       <input name="captcha" type="text" class="form-control" id="captcha" placeholder="Security Code">
     </div>
   </div>
+      
+     </form>
+    </div>
+
+      
 
      </form>
     </div>
