@@ -17,6 +17,13 @@ section,
 article {
   display: block;
 }
+span[data-val-errormessage="Required"] {
+  color: red;
+}
+.control-label.required:before {
+  content: "* ";
+  color: red;
+}
 .label-long {
   margin-top: -10px;
 }
@@ -2474,8 +2481,8 @@ hr,
   clear: both;
 }
 #container hr {
-  margin-top: 25px;
-  margin-bottom: 50px;
+  margin-top: 15px;
+  margin-bottom: 25px;
 }
 #container hr.soft {
   margin: 10px 0;
