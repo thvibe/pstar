@@ -16,6 +16,7 @@
 <!--  <script type="text/javascript" async="" src="http://remote.captcha.com/include.js?i=ATABMAEwATMBMAIxNhQqfJFoRv-JH88T9XbBT63mk2kFGw"></script> -->
 
 
+
 </head>
 
 <body>
@@ -69,14 +70,14 @@
     </div>
 
       <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 col-sm-offset-3 control-label required">First Name:</label>
+    <label for="txtfirstname" class="col-sm-2 col-sm-offset-3 control-label required">First Name:</label>
     <div class="col-sm-3">
       <input name="txtfirstname" type="text" class="form-control" id="txtfirstname" placeholder="" />
       <span data-val-controltovalidate="txtfirstname" data-val-errormessage="Required" id="rffirst" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
     </div>
   </div><!--jpg done-->
       <div class="form-group">
-    <label for="txtlastname" class="col-sm-2 col-sm-offset-3 control-label">Last Name:</label>
+    <label for="txtlastname" class="col-sm-2 col-sm-offset-3 control-label required">Last Name:</label>
     <div class="col-sm-3">
       <input name="txtlastname" type="text" class="form-control" id="txtlastname" placeholder="">
       <span data-val-controltovalidate="txtlastname" data-val-errormessage="Required" id="rflastname" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
@@ -84,19 +85,19 @@
 
   </div><!--jpg done-->
       <div class="form-group">
-    <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">Email:</label>
+    <label for="txtemail" class="col-sm-2 col-sm-offset-3 control-label required">Email:</label>
     <div class="col-sm-3">
-      <input name="txtlastname" type="text" class="form-control" id="txtphone" placeholder="">
-      <span data-val-controltovalidate="txtphone" data-val-errormessage="Required" id="rfphone" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
-      <span data-val-controltovalidate="txtphone" data-val-errormessage="xxx-xxx-xxxx" id="regexphone" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="^\d{3}-\d{3}-\d{4}$" style="visibility:hidden;">xxx-xxx-xxxx</span>
+      <input name="txtemail" type="text" class="form-control" id="txtemail" placeholder="">
+      <span data-val-controltovalidate="txtemail" data-val-errormessage="Required" id="rfemail" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
+      <span data-val-controltovalidate="txtemail" data-val-errormessage="x@x.x" id="RegularExpressionValidator1" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" style="visibility:hidden;">x@x.x</span>
     </div>
   </div><!--jpg done-->
-      <div class="form-group">
-    <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">Confirm Email:</label>
+  <div class="form-group">
+    <label for="txtconfirmemail" class="col-sm-2 col-sm-offset-3 control-label required">Confirm Email:</label>
     <div class="col-sm-3">
       <input name="txtconfirmemail" type="text" class="form-control" id="txtconfirmemail" placeholder="">
-      <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Required" id="RequiredFieldValidator1" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="">Required</span>
-      <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same</span>
+      <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Required" id="RequiredFieldValidator1" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="">Required. </span>
+      <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same.</span>
     </div>
   </div><!--jpg done-->
 
@@ -109,14 +110,14 @@
     </div>
 
       <div class="form-group">
-       <label for="txtphone" class="col-sm-2 col-sm-offset-3 control-label">City:</label>
+       <label for="txtcity" class="col-sm-2 col-sm-offset-3 control-label required">City:</label>
        <div class="col-sm-3">
         <input name="txtcity" type="text" class="form-control" id="txtcity" placeholder="">
         <span data-val-controltovalidate="txtcity" data-val-errormessage="Required" id="rfcity" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="" class="col-sm-2 col-sm-offset-3 control-label">Country:</label>
+       <label for="ddlcountry" class="col-sm-2 col-sm-offset-3 control-label required">Country:</label>
        <div class="col-sm-3">
         <select name="ddlcountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlcountry" class="form-control">
          <option selected="selected" value="-1">Select</option>
@@ -128,12 +129,12 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="" class="col-sm-2 col-sm-offset-3 control-label">State:</label>
+       <label for="ddlstate" class="col-sm-2 col-sm-offset-3 control-label required">State:</label>
        <div class="col-sm-3">
-        <select name="ddlstate" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlstate" class="form-control">
-         <option selected="selected" value="-1">Select</option>
-       	</select>
-        <span data-val-controltovalidate="ddlcountry" data-val-errormessage="Required" id="rfcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
+        <select name="ddlstate" id="ddlstate" class="form-control">
+          <option value="-1">Select</option>
+        </select>
+        <span data-val-controltovalidate="ddlstate" data-val-errormessage="Required" id="rfstate" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
 
@@ -145,10 +146,10 @@
       </div>
 
       <div class="form-group">
-       <label for="ddleducation" class="col-sm-3 col-sm-offset-2 control-label label-long">Highest Level of Post-Secondary Education(Select most appropriate):</label>
+       <label for="ddleducation" class="col-sm-3 col-sm-offset-2 control-label label-long required">Highest Level of Post-Secondary Education(Select most appropriate):</label>
        <div class="col-sm-3">
-        <select name="ddleducation" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddleducation" class="form-control">
-         <option value="-1">Select</option>
+        <select class="form-control" name="ddleducation" id="ddleducation">
+          <option value="-1">Select</option>
         	<option value="US 2-Year Degree">US 2-Year Degree</option>
         	<option value="US 4-Year Degree">US 4-Year Degree</option>
         	<option value="US More than 4-Year Degree">US More than 4-Year Degree</option>
@@ -175,7 +176,7 @@
       </div>
 
       <div class="form-group">
-       <label for="ddlmedicallicense" class="col-sm-2 col-sm-offset-3 control-label">Medical License Type:</label>
+       <label for="ddlmedicallicense" class="col-sm-2 col-sm-offset-3 control-label required">Medical License Type:</label>
        <div class="col-sm-3">
         <select name="ddlmedicallicense" id="ddlstate" class="form-control">
          <option value="-1">Please Select</option>
@@ -192,7 +193,6 @@
        <label for="txtmedicalother" class="col-sm-3 col-sm-offset-2 control-label label-long">Other License of Certification (If any, please specify):</label>
        <div class="col-sm-3">
         <input name="txtmedicalother" type="text" class="form-control" id="txtmedicalother" placeholder="">
-        <span data-val-controltovalidate="txtmedicalother" data-val-errormessage="Required" id="rfmedicalother" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
@@ -253,7 +253,6 @@
         	<option value="WI">Wisconsin</option>
         	<option value="WY">Wyoming</option>
 	       </select>
-	       <span data-val-controltovalidate="ddlmedicallicense" data-val-errormessage="Required" id="rfmedicallicense" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
@@ -269,7 +268,6 @@
          <option value="Yes">Yes</option>
          <option value="No">No</option>
         </select>
-	       <span data-val-controltovalidate="ddlmedicallicense" data-val-errormessage="Required" id="rfmedicallicense" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
 
@@ -281,7 +279,7 @@
       </div>
 
       <div class="form-group">
-       <label for="ddllanguagesecondary" class="col-sm-3 col-sm-offset-2 control-label label-long">Fluent in an another language besides English, please select one (Choose English only, if not bilingual):</label>
+       <label for="ddllanguagesecondary" class="col-sm-3 col-sm-offset-2 control-label label-long required">Fluent in an another language besides English, please select one (Choose English only, if not bilingual):</label>
        <div class="col-sm-3">
         <select name="ddllanguagesecondary" id="ddllanguagesecondary" class="form-control">
         	<option value="-1">Select</option>
@@ -317,13 +315,13 @@
         	<option value="Vietnamese">Vietnamese</option>
         	<option value="Other (please write below)">Other (please write below)</option>
         </select>
-	       <span data-val-controltovalidate="ddlmedicallicense" data-val-errormessage="Required" id="rfmedicallicense" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
+        <span data-val-controltovalidate="ddllanguagesecondary" data-val-errormessage="Required" id="rflangsecondary" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="-1" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddllanguagesecondary" class="col-sm-3 col-sm-offset-2 control-label label-long">Fluent in a third language besides English, please select one or leave blank if English only or bilingual only:</label>
+       <label for="ddllanguagethird" class="col-sm-3 col-sm-offset-2 control-label label-long">Fluent in a third language besides English, please select one or leave blank if English only or bilingual only:</label>
        <div class="col-sm-3">
-        <select name="ddllanguagesecondary" id="ddllanguagesecondary" class="form-control">
+        <select name="ddllanguagethird" class="form-control" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddllanguagethird\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddllanguagethird">
         	<option selected="selected" value="-1">Select</option>
         	<option value="English Only">English Only</option>
         	<option value="Bulgarian">Bulgarian</option>
@@ -361,40 +359,35 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddllanguagethird" class="col-sm-3 col-sm-offset-2 control-label label-long">Other Language (please specify):</label>
+       <label for="txtlanguageother" class="col-sm-3 col-sm-offset-2 control-label">Other Language (please specify):</label>
        <div class="col-sm-3">
-        <input name="ddllanguagethird" type="text" class="form-control" id="ddllanguagethird" placeholder="">
+        <input name="txtlanguageother" type="text" class="form-control" id="txtlanguageother" placeholder="">
         <span data-val-controltovalidate="txtlanguageother" data-val-errormessage="Required" data-val-enabled="False" id="rflanguageother" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
 
       <!---end jpg -->
-      <div class="form-group">
-       <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
-       <div class="col-sm-3">
-         <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
-       </div>
-     </div>
-      <div class="form-group">
 
-      <div class="row clearfix">
-    <div class="col-xs-12">
-      <h2 class="form-section-header">Hours of Availability</h2>
-      <hr/>
-      <p>We have a flexible scheduling model that allows for increments of one hour. This will give us an idea of how your availability matches up with the scheduling needs.</p>
-      <p>Next to each time range below, please indicate the total number of hours on average you
-      could make yourself available, in a typical work week. All times are based on Eastern Standard Time zone.</p>
+  <div class="form-group">
+    <div class="row clearfix">
+      <div class="col-xs-12">
+        <h2 class="form-section-header">Hours of Availability</h2>
+        <hr/>
+        <p>We have a flexible scheduling model that allows for increments of one hour. This will give us an idea of how your availability matches up with the scheduling needs.</p>
+        <p>Next to each time range below, please indicate the total number of hours on average you
+        could make yourself available, in a typical work week. All times are based on Eastern Standard Time zone.</p>
+      </div>
     </div>
-  </div>
     <div class="row-fluid clearfix">
-    <div class="col-xs-12">
-      <h3>Weekdays</h3>
-      <hr/>
+      <div class="col-xs-12">
+        <h3>Weekdays</h3>
+        <hr/>
+      </div>
     </div>
   </div>
 
   <div class="form-group">
-    <label for="ddlWD8to12pm" class="col-sm-3 col-sm-offset-2 control-label">8am to 12pm:</label>
+    <label for="ddlWD8to12pm" class="col-sm-3 col-sm-offset-2 control-label required">8am to 12pm:</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWD8to12pm" id="ddlWD8to12pm">
         <option value="0">0</option>
@@ -422,7 +415,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD12to4pm" class="col-sm-3 col-sm-offset-2 control-label">12pm to 4pm:</label>
+    <label for="ddlWD12to4pm" class="col-sm-3 col-sm-offset-2 control-label required">12pm to 4pm:</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWD12to4pm" id="ddlWD12to4pm">
         <option value="0">0</option>
@@ -450,7 +443,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD4to8pm" class="col-sm-3 col-sm-offset-2 control-label">4pm to 8pm:</label>
+    <label for="ddlWD4to8pm" class="col-sm-3 col-sm-offset-2 control-label required">4pm to 8pm:</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWD4to8pm" id="ddlWD4to8pm">
         <option value="0">0</option>
@@ -478,7 +471,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD8to12am" class="col-sm-3 col-sm-offset-2 control-label">8pm to 12am:</label>
+    <label for="ddlWD8to12am" class="col-sm-3 col-sm-offset-2 control-label required">8pm to 12am:</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWD8to12am" id="ddlWD8to12am">
         <option value="0">0</option>
@@ -506,7 +499,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD12to4am" class="col-sm-3 col-sm-offset-2 control-label">12am to 4am:</label>
+    <label for="ddlWD12to4am" class="col-sm-3 col-sm-offset-2 control-label required">12am to 4am:</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWD12to4am" id="ddlWD12to4am">
         <option value="0">0</option>
@@ -534,7 +527,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD4to8am" class="col-sm-3 col-sm-offset-2 control-label">4am to 8am:</label>
+    <label for="ddlWD4to8am" class="col-sm-3 col-sm-offset-2 control-label required">4am to 8am:</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWD4to8am" id="ddlWD4to8am">
         <option value="0">0</option>
@@ -561,15 +554,15 @@
       </select>
     </div>
   </div>
-  
+
   <div class="row clearfix">
     <div class="col-xs-12">
       <h3>Weekends</h3>
     </div>
   </div>
-  
+
   <div class="form-group">
-    <label for="ddlWE12to8pm" class="col-sm-3 col-sm-offset-2 control-label">12pm to 8pm (Daytime):</label>
+    <label for="ddlWE12to8pm" class="col-sm-3 col-sm-offset-2 control-label required">12pm to 8pm (Daytime):</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWE12to8pm" id="ddlWE12to8pm">
         <option value="0">0</option>
@@ -593,7 +586,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWE12to8am" class="col-sm-3 col-sm-offset-2 control-label">12am to 8am (Overnight):</label>
+    <label for="ddlWE12to8am" class="col-sm-3 col-sm-offset-2 control-label required">12am to 8am (Overnight):</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWE12to8am" id="ddlWE12to8am">
         <option value="0">0</option>
@@ -617,7 +610,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWE8to12pm" class="col-sm-3 col-sm-offset-2 control-label">8am to 12pm (Morning):</label>
+    <label for="ddlWE8to12pm" class="col-sm-3 col-sm-offset-2 control-label required">8am to 12pm (Morning):</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWE8to12pm" id="ddlWE8to12pm">
         <option value="0">0</option>
@@ -633,7 +626,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWE8to12am" class="col-sm-3 col-sm-offset-2 control-label">8pm to 12am (Evening):</label>
+    <label for="ddlWE8to12am" class="col-sm-3 col-sm-offset-2 control-label required">8pm to 12am (Evening):</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlWE8to12am" id="ddlWE8to12am">
         <option value="0">0</option>
@@ -656,7 +649,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlunderstand" class="col-sm-3 col-sm-offset-2 control-label label-long"> I understand that this is an Independent Contractor Position (yes/no):</label>
+    <label for="ddlunderstand" class="col-sm-3 col-sm-offset-2 control-label label-long required"> I understand that this is an Independent Contractor Position (yes/no):</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlunderstand" id="ddlunderstand">
         <option value="Yes">Yes</option>
@@ -665,7 +658,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlreference" class="col-sm-3 col-sm-offset-2 control-label label-long">Can you provide at least one manager or supervisor reference, from employment in a healthcare setting?</label>
+    <label for="ddlreference" class="col-sm-3 col-sm-offset-2 control-label label-long required">Can you provide at least one manager or supervisor reference, from employment in a healthcare setting?</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlreference" onchange="javascript:setTimeout('__doPostBack(\'ddlreference\',\'\')', 0)" id="ddlreference">
         <option value="Yes">Yes</option>
@@ -681,7 +674,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddllegallywork" class="col-sm-3 col-sm-offset-2 control-label label-long">I can legally work in the US or Canada (yes/no):</label>
+    <label for="ddllegallywork" class="col-sm-3 col-sm-offset-2 control-label label-long required">I can legally work in the US or Canada (yes/no):</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddllegallywork" onchange="javascript:setTimeout('__doPostBack(\'ddllegallywork\',\'\')', 0)" id="ddllegallywork">
         <option value="Yes">Yes</option>
@@ -704,7 +697,7 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlsource" class="col-sm-3 col-sm-offset-2 control-label">How did you hear about us?</label>
+    <label for="ddlsource" class="col-sm-3 col-sm-offset-2 control-label required">How did you hear about us?</label>
     <div class="col-sm-3">
       <select class="form-control" name="ddlsource" id="ddlsource">
           <option value="-1">Select</option>
@@ -719,9 +712,13 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="furesume" class="col-sm-2 col-sm-offset-3 control-label label-long">Upload Resume/CV (PDF, DOC, DOCX):</label>
+    <label for="furesume" class="col-sm-3 col-sm-offset-2 control-label label-long required">Upload Resume / CV (PDF, DOC, DOCX):</label>
     <div class="col-sm-3">
-      <span class="btn btn-primary btn-file">Choose File<input type="file" class="form-control" id="furesume"></span>
+      <input id="furesume" class="form-control uploadedFileName" placeholder="No file selected." disabled="disabled" />
+      <div class="fileUpload btn-block btn btn-primary">
+          <span>Choose File</span>
+          <input id="uploadBtn" type="file" class="form-control upload" />
+      </div>
     </div>
   </div>
   <div class="form-group">
@@ -732,7 +729,7 @@
   </div>
   <div class="form-group">
 
-    <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label">Security Code:</label>
+    <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label required">Security Code:</label>
     <div class="col-sm-3">
       <div class="LBD_CaptchaDiv " id="c_contactform_captchabox_CaptchaDiv" style="width: 280px !important; height: 50px !important; "><!--
        --><div class="LBD_CaptchaImageDiv" id="c_contactform_captchabox_CaptchaImageDiv" style="width: 250px !important; height: 50px !important;"><!--
@@ -778,11 +775,15 @@
 <a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
         <!--footer-->
         <footer id="footer">
-         <div id="000828d0-ded9-4f64-9cfc-2e1a6b03d623">
-          <script type="text/javascript" src="//privacy-policy.truste.com/privacy-seal/PatientStar-LLC/asc?rid=000828d0-ded9-4f64-9cfc-2e1a6b03d623"></script>
-          <a href="//privacy.truste.com/privacy-seal/PatientStar-LLC/validation?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" title="TRUSTe European Safe Harbor certification" target="_blank">
-           <img style="border: none" src="//privacy-policy.truste.com/privacy-seal/PatientStar-LLC/seal?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" alt="TRUSTe European Safe Harbor certification" />
+         <div id="000828d0-ded9-4f64-9cfc-2e1a6b03d623" class="container">
+                 <div class="row-fluid clearfix">
+                         <div class="col-xs-12">
+          <script type="text/javascript" src="http://privacy-policy.truste.com/privacy-seal/PatientStar-LLC/asc?rid=000828d0-ded9-4f64-9cfc-2e1a6b03d623"></script>
+          <a href="http://privacy.truste.com/privacy-seal/PatientStar-LLC/validation?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" title="TRUSTe European Safe Harbor certification" target="_blank">
+           <img style="border: none" src="http://privacy-policy.truste.com/privacy-seal/PatientStar-LLC/seal?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" alt="TRUSTe European Safe Harbor certification" />
           </a>
+          </div>
+                         </div>
          </div>
         </footer>
         <!--footer menu-->
@@ -827,6 +828,12 @@
          $(document).ready(function() {
           $('#menu > ul').superfish();
          });
+        </script>
+
+        <script>
+          document.getElementById("uploadBtn").onchange = function () {
+              document.getElementById("furesume").value = this.value;
+          };
         </script>
 
 </body>
