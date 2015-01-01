@@ -712,9 +712,13 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="furesume" class="col-sm-2 col-sm-offset-3 control-label label-long required">Upload Resume/CV (PDF, DOC, DOCX):</label>
+    <label for="furesume" class="col-sm-3 col-sm-offset-2 control-label label-long required">Upload Resume / CV (PDF, DOC, DOCX):</label>
     <div class="col-sm-3">
-      <span class="btn btn-primary btn-file">Choose File<input type="file" class="form-control" id="furesume"></span>
+      <input id="furesume" class="form-control uploadedFileName" placeholder="No file selected." disabled="disabled" />
+      <div class="fileUpload btn-block btn btn-primary">
+          <span>Choose File</span>
+          <input id="uploadBtn" type="file" class="form-control upload" />
+      </div>
     </div>
   </div>
   <div class="form-group">
@@ -771,11 +775,15 @@
 <a href="#" id="toTop" style="display: inline;"><span id="toTopHover" style="opacity: 0;"></span>To Top</a>
         <!--footer-->
         <footer id="footer">
-         <div id="000828d0-ded9-4f64-9cfc-2e1a6b03d623">
-          <script type="text/javascript" src="//privacy-policy.truste.com/privacy-seal/PatientStar-LLC/asc?rid=000828d0-ded9-4f64-9cfc-2e1a6b03d623"></script>
-          <a href="//privacy.truste.com/privacy-seal/PatientStar-LLC/validation?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" title="TRUSTe European Safe Harbor certification" target="_blank">
-           <img style="border: none" src="//privacy-policy.truste.com/privacy-seal/PatientStar-LLC/seal?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" alt="TRUSTe European Safe Harbor certification" />
+         <div id="000828d0-ded9-4f64-9cfc-2e1a6b03d623" class="container">
+                 <div class="row-fluid clearfix">
+                         <div class="col-xs-12">
+          <script type="text/javascript" src="http://privacy-policy.truste.com/privacy-seal/PatientStar-LLC/asc?rid=000828d0-ded9-4f64-9cfc-2e1a6b03d623"></script>
+          <a href="http://privacy.truste.com/privacy-seal/PatientStar-LLC/validation?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" title="TRUSTe European Safe Harbor certification" target="_blank">
+           <img style="border: none" src="http://privacy-policy.truste.com/privacy-seal/PatientStar-LLC/seal?rid=4425cac0-fcb8-473f-b4a2-734bcf542f28" alt="TRUSTe European Safe Harbor certification" />
           </a>
+          </div>
+                         </div>
          </div>
         </footer>
         <!--footer menu-->
@@ -820,6 +828,12 @@
          $(document).ready(function() {
           $('#menu > ul').superfish();
          });
+        </script>
+
+        <script>
+          document.getElementById("uploadBtn").onchange = function () {
+              document.getElementById("furesume").value = this.value;
+          };
         </script>
 
 </body>
