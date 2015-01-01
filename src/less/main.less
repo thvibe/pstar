@@ -11,6 +11,9 @@ body {
     font-family: Arial, sans-serif;
 //     background: url(/img/skelatal_weave1.png) repeat #FFFFFF;
 }
+li ,p {
+	font-size: 1.2em;
+}
 header {
 	  background: url(../img/agsquare.png) repeat #FFFFFF;
 }
@@ -24,12 +27,21 @@ header,nav,section,article {
 [data-val-errormessage] {
  color:red;
  font-weight: bold;
+ @media (min-width: @screen-md-min) {
+		font-size: 1.2em;
+	}	
 }
 .control-label.required {
  &:before {
   content: "* ";
   color:red; 
  }
+}
+label {
+	color: #777777;
+	@media (min-width: @screen-md-min) {
+		font-size: 1.2em;
+	}
 }
 .label-long {
  margin-top: -10px;
@@ -87,12 +99,12 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Arial', sans-serif;
 }
 h1 {
-    font-size: 28px;
+    font-size: 2em;
     margin-bottom: 15px;
     line-height: 22px;
 }
 h2 {
-    font-size: 20px;
+    font-size: 2.1em;
     margin-bottom: 15px;
     line-height: 20px;
 }

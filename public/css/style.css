@@ -6302,6 +6302,10 @@ body {
   font-size: 12px;
   font-family: Arial, sans-serif;
 }
+li,
+p {
+  font-size: 1.2em;
+}
 header {
   background: url(../img/agsquare.png) repeat #ffffff;
 }
@@ -6372,9 +6376,22 @@ article {
   color: red;
   font-weight: bold;
 }
+@media (min-width: 992px) {
+  [data-val-errormessage] {
+    font-size: 1.2em;
+  }
+}
 .control-label.required:before {
   content: "* ";
   color: red;
+}
+label {
+  color: #777777;
+}
+@media (min-width: 992px) {
+  label {
+    font-size: 1.2em;
+  }
 }
 .label-long {
   margin-top: -10px;
@@ -6437,12 +6454,12 @@ h6 {
   font-family: 'Arial', sans-serif;
 }
 h1 {
-  font-size: 28px;
+  font-size: 2em;
   margin-bottom: 15px;
   line-height: 22px;
 }
 h2 {
-  font-size: 20px;
+  font-size: 2.1em;
   margin-bottom: 15px;
   line-height: 20px;
 }
