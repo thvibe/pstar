@@ -6317,6 +6317,12 @@ li.view.view-fifth {
   -ms-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media (min-width: 992px) and (max-width: 1199px) {
+  .view-fifth img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+}
 .view-fifth .mask {
   background-color: #0079C2;
   height: 350px !important;
@@ -6340,7 +6346,7 @@ li.view.view-fifth {
   line-height: 1.2em;
   text-align: left;
   padding-bottom: 1.5em;
-  padding-top: 1.1em;
+  padding-top: 10px;
 }
 .view-fifth h3 {
   color: #000;
@@ -6543,6 +6549,9 @@ figure {
   line-height: 1;
   letter-spacing: -1px;
   color: #0079C2;
+}
+.featurette-heading span.muted {
+  color: #777;
 }
 .featurette-image.pull-right {
   margin-left: 40px;
@@ -9232,7 +9241,7 @@ blockquote p {
     margin-right: 15px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 767px) {
   #container .container {
     padding: 30px;
   }
@@ -9362,4 +9371,3 @@ blockquote p {
 #captcha-placeholder {
   margin-bottom: 10px;
 }
-/*# sourceMappingURL=style.css.map */

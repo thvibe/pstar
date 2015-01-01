@@ -24,6 +24,10 @@ li.view.view-fifth {
     img {
 			    	width: 256px !important;
 								height: 256px !important;
+								@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { 
+									width: 150px !important;
+									height: 150px !important;
+								 }
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
@@ -52,7 +56,7 @@ li.view.view-fifth {
 	        line-height: 1.2em;
 	        text-align: left;
 	        padding-bottom: 1.5em;
-	        padding-top: 1.1em;
+	        padding-top: 10px;
         }
     }
     h3 {
@@ -97,6 +101,7 @@ li.view.view-fifth {
 	height: 300px;
 	margin-left: -15px;
 	margin-right: -15px;
+	
 	h2 {
 		color: white;
 		font-size: 3em;
@@ -205,6 +210,9 @@ figure {
     line-height: 1;
     letter-spacing: -1px;
     color: #0079C2;
+    span.muted {
+	    color: #777;
+    }
 }
 .featurette-image.pull-right {
     margin-left: 40px;
@@ -226,6 +234,7 @@ h2 {
     font-size: 2.1em;
     margin-bottom: 15px;
     line-height: 20px;
+
 }
 h3 {
     font-size: 18px;
@@ -1302,8 +1311,9 @@ h4.title {
         display:none;
         @media (min-width:@screen-md-min) {
 	        width: 850px !important;
-	        
         }
+        
+        
         li {
             height:100%;
             float:left;
