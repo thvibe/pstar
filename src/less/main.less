@@ -13,14 +13,11 @@ body {
 }
 header {
 	  background: url(../img/agsquare.png) repeat #FFFFFF;
-
 }
-/*
 .res-menu {
 	.input-lg();
 	.form-control();
 }
-*/
 header,nav,section,article {
     display: block;
 }
@@ -167,6 +164,12 @@ h4.title {
 /*-----------------------------------------------------------------------------------*/
 /*	2.	Header, Navigation & Menus
 /*-----------------------------------------------------------------------------------*/
+.call-us-header {
+	font-size:1.4em; 
+	padding-top: 10px;
+	text-align:center; 
+	font-family: Droid sans, sans-serif;
+}
 #top-menu {
     padding: 5px 0;
     background-color: #0079c2;
@@ -233,6 +236,7 @@ h4.title {
     width: 100%;
 }
 #menu {
+	@media (max-width: @screen-xs-max) { float: none	!important;padding-left: 20px;padding-right: 20px; }
     ul {
         margin-left:9px;
         ul {
@@ -476,8 +480,8 @@ h4.title {
     white-space: nowrap;
     width: 50%;
     z-index: 10;
-    line-height: 1.2em
-//     @media (max-width: @screen-xs-max) { font-size: 0.5em; }
+    line-height: 1.2em;
+				@media (max-width: @screen-xs-max) { font-size: 2em; }
 }
 .da-slide p{
     color: #BBBBBB;
@@ -1111,6 +1115,7 @@ h4.title {
     h1 {
         color: #0079c2;
         font-size: 33px;
+        @media (max-width: @screen-xs-max) { font-size: 1.4em;line-height: 1.4em !important; }
         font-weight: 400;
         line-height: 40px !important;
         margin-bottom: 10px !important;
@@ -1120,6 +1125,8 @@ h4.title {
         line-height: 30px;
         font-weight: 200;
         font-size: 20px;
+        @media (max-width: @screen-xs-max) { font-size: 1.2em; }
+
         margin-bottom: 50px;
     }
 }

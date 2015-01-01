@@ -3783,7 +3783,7 @@
 		},
 	"\/src\/less\/style.less": {
 		"allowInsecureImports": 0,
-		"createSourceMap": 0,
+		"createSourceMap": 1,
 		"disableJavascript": 0,
 		"fileType": 1,
 		"ieCompatibility": 1,
