@@ -13,6 +13,12 @@ body {
 header {
   background: url(../img/agsquare.png) repeat #ffffff;
 }
+/*
+.res-menu {
+	.input-lg();
+	.form-control();
+}
+*/
 header,
 nav,
 section,
