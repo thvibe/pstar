@@ -58,7 +58,7 @@
 
 
     <div class="row-fluid clearfix">
-     <form class="form-horizontal">
+     <form class="form-horizontal" id="apply_now_form">
 
       <div class="row clearfix">
 
@@ -84,16 +84,16 @@
 
   </div><!--jpg done-->
       <div class="form-group">
-    <label for="txtemail" class="col-sm-2 col-sm-offset-3 control-label required">Email:</label>
-    <div class="col-sm-3">
+    <label for="txtemail" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">Email:</label>
+    <div class="col-sm-5 col-md-3">
       <input name="txtemail" type="text" class="form-control" id="txtemail" placeholder="">
       <span data-val-controltovalidate="txtemail" data-val-errormessage="Required" id="rfemail" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
       <span data-val-controltovalidate="txtemail" data-val-errormessage="x@x.x" id="RegularExpressionValidator1" data-val="true" data-val-evaluationfunction="RegularExpressionValidatorEvaluateIsValid" data-val-validationexpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*" style="visibility:hidden;">x@x.x</span>
     </div>
   </div><!--jpg done-->
   <div class="form-group">
-    <label for="txtconfirmemail" class="col-sm-2 col-sm-offset-3 control-label required">Confirm Email:</label>
-    <div class="col-sm-3">
+    <label for="txtconfirmemail" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">Confirm Email:</label>
+    <div class="col-sm-5 col-md-3">
       <input name="txtconfirmemail" type="text" class="form-control" id="txtconfirmemail" placeholder="">
       <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Required" id="RequiredFieldValidator1" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="">Required. </span>
       <span data-val-controltovalidate="txtconfirmemail" data-val-errormessage="Emails not the same" id="cvemail" data-val="true" data-val-evaluationfunction="CompareValidatorEvaluateIsValid" data-val-controltocompare="txtemail" data-val-controlhookup="txtemail">Emails not the same.</span>
@@ -109,15 +109,15 @@
     </div>
 
       <div class="form-group">
-       <label for="txtcity" class="col-sm-2 col-sm-offset-3 control-label required">City:</label>
-       <div class="col-sm-3">
+       <label for="txtcity" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">City:</label>
+       <div class="col-xs-5 col-md-3">
         <input name="txtcity" type="text" class="form-control" id="txtcity" placeholder="">
         <span data-val-controltovalidate="txtcity" data-val-errormessage="Required" id="rfcity" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddlcountry" class="col-sm-2 col-sm-offset-3 control-label required">Country:</label>
-       <div class="col-sm-3">
+       <label for="ddlcountry" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">Country:</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddlcountry" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddlcountry\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddlcountry" class="form-control">
          <option selected="selected" value="-1">Select</option>
          <option value="US">US</option>
@@ -128,8 +128,8 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddlstate" class="col-sm-2 col-sm-offset-3 control-label required">State:</label>
-       <div class="col-sm-3">
+       <label for="ddlstate" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">State:</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddlstate" id="ddlstate" class="form-control">
           <option value="-1">Select</option>
         </select>
@@ -145,8 +145,8 @@
       </div>
 
       <div class="form-group">
-       <label for="ddleducation" class="col-sm-3 col-sm-offset-2 control-label label-long required">Highest Level of Post-Secondary Education(Select most appropriate):</label>
-       <div class="col-sm-3">
+       <label for="ddleducation" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long required">Highest Level of Post-Secondary Education(Select most appropriate):</label>
+       <div class="col-sm-5 col-md-3">
         <select class="form-control" name="ddleducation" id="ddleducation">
           <option value="-1">Select</option>
         	<option value="US 2-Year Degree">US 2-Year Degree</option>
@@ -160,8 +160,8 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="" class="col-sm-2 col-sm-offset-3 control-label">Other:</label>
-       <div class="col-sm-3">
+       <label for="" class="col-sm-4 col-md-2 col-md-offset-3 control-label">Other:</label>
+       <div class="col-sm-5 col-md-3">
         <input name="txteducationother" type="text" class="form-control" id="txteducationother" placeholder="">
        </div>
       </div><!--jpg done-->
@@ -175,8 +175,8 @@
       </div>
 
       <div class="form-group">
-       <label for="ddlmedicallicense" class="col-sm-2 col-sm-offset-3 control-label required">Medical License Type:</label>
-       <div class="col-sm-3">
+       <label for="ddlmedicallicense" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">Medical License Type:</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddlmedicallicense" id="ddlstate" class="form-control">
          <option value="-1">Please Select</option>
         	<option value="MD/DO">MD/DO</option>
@@ -189,14 +189,14 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="txtmedicalother" class="col-sm-3 col-sm-offset-2 control-label label-long">Other License of Certification (If any, please specify):</label>
-       <div class="col-sm-3">
+       <label for="txtmedicalother" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long">Other License of Certification (If any, please specify):</label>
+       <div class="col-sm-5 col-md-3">
         <input name="txtmedicalother" type="text" class="form-control" id="txtmedicalother" placeholder="">
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddlmedicallicensestate" class="col-sm-2 col-sm-offset-3 control-label">Medical License State:</label>
-       <div class="col-sm-3">
+       <label for="ddlmedicallicensestate" class="col-sm-4 col-md-2 col-md-offset-3 control-label">Medical License State:</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddlmedicallicensestate" id="ddlmedicallicensestate" class="form-control">
          <option value="-1">Select</option>
         	<option value="AL">Alabama</option>
@@ -255,14 +255,14 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="txtmedicallicensenumber" class="col-sm-3 col-sm-offset-2 control-label">Medical License Number:</label>
-       <div class="col-sm-3">
+       <label for="txtmedicallicensenumber" class="col-sm-4 col-md-2 col-md-offset-3 control-label">Medical License Number:</label>
+       <div class="col-sm-5 col-md-3">
         <input name="txtmedicallicensenumber" type="text" class="form-control" id="txtmedicallicensenumber" placeholder="">
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddlactivelicense" class="col-sm-3 col-sm-offset-2 control-label">Is medical license active?</label>
-       <div class="col-sm-3">
+       <label for="ddlactivelicense" class="col-sm-4 col-md-2 col-md-offset-3 control-label">Is medical license active?</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddlactivelicense" id="ddlactivelicense" class="form-control">
          <option value="Yes">Yes</option>
          <option value="No">No</option>
@@ -278,8 +278,8 @@
       </div>
 
       <div class="form-group">
-       <label for="ddllanguagesecondary" class="col-sm-3 col-sm-offset-2 control-label label-long required">Fluent in an another language besides English, please select one (Choose English only, if not bilingual):</label>
-       <div class="col-sm-3">
+       <label for="ddllanguagesecondary" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long required">Fluent in an another language besides English, please select one (Choose English only, if not bilingual):</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddllanguagesecondary" id="ddllanguagesecondary" class="form-control">
         	<option value="-1">Select</option>
         	<option value="English Only">English Only</option>
@@ -318,8 +318,8 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="ddllanguagethird" class="col-sm-3 col-sm-offset-2 control-label label-long">Fluent in a third language besides English, please select one or leave blank if English only or bilingual only:</label>
-       <div class="col-sm-3">
+       <label for="ddllanguagethird" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long">Fluent in a third language besides English, please select one or leave blank if English only or bilingual only:</label>
+       <div class="col-sm-5 col-md-3">
         <select name="ddllanguagethird" class="form-control" onchange="javascript:setTimeout(&#39;__doPostBack(\&#39;ddllanguagethird\&#39;,\&#39;\&#39;)&#39;, 0)" id="ddllanguagethird">
         	<option selected="selected" value="-1">Select</option>
         	<option value="English Only">English Only</option>
@@ -358,8 +358,8 @@
        </div>
       </div><!--jpg done-->
       <div class="form-group">
-       <label for="txtlanguageother" class="col-sm-3 col-sm-offset-2 control-label">Other Language (please specify):</label>
-       <div class="col-sm-3">
+       <label for="txtlanguageother" class="col-sm-4 col-md-2 col-md-offset-3 control-label">Other Language (please specify):</label>
+       <div class="col-sm-5 col-md-3">
         <input name="txtlanguageother" type="text" class="form-control" id="txtlanguageother" placeholder="">
         <span data-val-controltovalidate="txtlanguageother" data-val-errormessage="Required" data-val-enabled="False" id="rflanguageother" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
        </div>
@@ -386,8 +386,8 @@
   </div>
 
   <div class="form-group">
-    <label for="ddlWD8to12pm" class="col-sm-3 col-sm-offset-2 control-label required">8am to 12pm:</label>
-    <div class="col-sm-3">
+    <label for="ddlWD8to12pm" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">8am to 12pm:</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWD8to12pm" id="ddlWD8to12pm">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -414,8 +414,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD12to4pm" class="col-sm-3 col-sm-offset-2 control-label required">12pm to 4pm:</label>
-    <div class="col-sm-3">
+    <label for="ddlWD12to4pm" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">12pm to 4pm:</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWD12to4pm" id="ddlWD12to4pm">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -442,8 +442,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD4to8pm" class="col-sm-3 col-sm-offset-2 control-label required">4pm to 8pm:</label>
-    <div class="col-sm-3">
+    <label for="ddlWD4to8pm" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">4pm to 8pm:</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWD4to8pm" id="ddlWD4to8pm">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -470,8 +470,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD8to12am" class="col-sm-3 col-sm-offset-2 control-label required">8pm to 12am:</label>
-    <div class="col-sm-3">
+    <label for="ddlWD8to12am" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">8pm to 12am:</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWD8to12am" id="ddlWD8to12am">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -498,8 +498,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD12to4am" class="col-sm-3 col-sm-offset-2 control-label required">12am to 4am:</label>
-    <div class="col-sm-3">
+    <label for="ddlWD12to4am" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">12am to 4am:</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWD12to4am" id="ddlWD12to4am">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -526,8 +526,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWD4to8am" class="col-sm-3 col-sm-offset-2 control-label required">4am to 8am:</label>
-    <div class="col-sm-3">
+    <label for="ddlWD4to8am" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">4am to 8am:</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWD4to8am" id="ddlWD4to8am">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -561,8 +561,8 @@
   </div>
 
   <div class="form-group">
-    <label for="ddlWE12to8pm" class="col-sm-3 col-sm-offset-2 control-label required">12pm to 8pm (Daytime):</label>
-    <div class="col-sm-3">
+    <label for="ddlWE12to8pm" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">12pm to 8pm (Daytime):</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWE12to8pm" id="ddlWE12to8pm">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -585,8 +585,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWE12to8am" class="col-sm-3 col-sm-offset-2 control-label required">12am to 8am (Overnight):</label>
-    <div class="col-sm-3">
+    <label for="ddlWE12to8am" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">12am to 8am (Overnight):</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWE12to8am" id="ddlWE12to8am">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -609,8 +609,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWE8to12pm" class="col-sm-3 col-sm-offset-2 control-label required">8am to 12pm (Morning):</label>
-    <div class="col-sm-3">
+    <label for="ddlWE8to12pm" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">8am to 12pm (Morning):</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWE8to12pm" id="ddlWE8to12pm">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -625,8 +625,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlWE8to12am" class="col-sm-3 col-sm-offset-2 control-label required">8pm to 12am (Evening):</label>
-    <div class="col-sm-3">
+    <label for="ddlWE8to12am" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">8pm to 12am (Evening):</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlWE8to12am" id="ddlWE8to12am">
         <option value="0">0</option>
         <option value="1">1</option>
@@ -648,8 +648,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlunderstand" class="col-sm-3 col-sm-offset-2 control-label label-long required"> I understand that this is an Independent Contractor Position (yes/no):</label>
-    <div class="col-sm-3">
+    <label for="ddlunderstand" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long required"> I understand that this is an Independent Contractor Position (yes/no):</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlunderstand" id="ddlunderstand">
         <option value="Yes">Yes</option>
         <option value="No">No</option>
@@ -657,8 +657,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlreference" class="col-sm-3 col-sm-offset-2 control-label label-long required">Can you provide at least one manager or supervisor reference, from employment in a healthcare setting?</label>
-    <div class="col-sm-3">
+    <label for="ddlreference" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long required">Can you provide at least one manager or supervisor reference, from employment in a healthcare setting?</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlreference" onchange="javascript:setTimeout('__doPostBack(\'ddlreference\',\'\')', 0)" id="ddlreference">
         <option value="Yes">Yes</option>
         <option value="No">No</option>
@@ -666,15 +666,15 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="txtreference" class="col-sm-3 col-sm-offset-2 control-label label-long">If no, please describe the type of professional reference you can provide?</label>
-    <div class="col-sm-3">
+    <label for="txtreference" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long">If no, please describe the type of professional reference you can provide?</label>
+    <div class="col-sm-5 col-md-3">
       <input name="txtreference" type="text" id="txtreference" class="form-control">
       <span data-val-controltovalidate="txtreference" data-val-errormessage="Required" data-val-enabled="False" id="rfreference" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
     </div>
   </div>
   <div class="form-group">
-    <label for="ddllegallywork" class="col-sm-3 col-sm-offset-2 control-label label-long required">I can legally work in the US or Canada (yes/no):</label>
-    <div class="col-sm-3">
+    <label for="ddllegallywork" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long required">I can legally work in the US or Canada (yes/no):</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddllegallywork" onchange="javascript:setTimeout('__doPostBack(\'ddllegallywork\',\'\')', 0)" id="ddllegallywork">
         <option value="Yes">Yes</option>
         <option value="No">No</option>
@@ -682,8 +682,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="txtlegalcountry" class="col-sm-3 col-sm-offset-2 control-label label-long">If no, what country can you legally work?</label>
-    <div class="col-sm-3">
+    <label for="txtlegalcountry" class="col-sm-4 col-md-3 col-md-offset-2 control-label label-long">If no, what country can you legally work?</label>
+    <div class="col-sm-5 col-md-3">
       <input class="form-control" name="txtlegalcountry" type="text" id="txtlegalcountry">
       <span data-val-controltovalidate="txtlegalcountry" data-val-errormessage="Required" data-val-enabled="False" id="rflegalcountry" data-val="true" data-val-evaluationfunction="RequiredFieldValidatorEvaluateIsValid" data-val-initialvalue="" style="visibility:hidden;">Required</span>
     </div>
@@ -696,8 +696,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="ddlsource" class="col-sm-3 col-sm-offset-2 control-label required">How did you hear about us?</label>
-    <div class="col-sm-3">
+    <label for="ddlsource" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">How did you hear about us?</label>
+    <div class="col-sm-5 col-md-3">
       <select class="form-control" name="ddlsource" id="ddlsource">
           <option value="-1">Select</option>
           <option value="Craigslist Ad">Craigslist Ad</option>
@@ -711,8 +711,8 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="furesume" class="col-sm-3 col-sm-offset-2 control-label label-long required">Upload Resume / CV (PDF, DOC, DOCX):</label>
-    <div class="col-sm-3">
+    <label for="furesume" class="col-sm-4 col-md-2 col-md-offset-3 control-label label-long required">Upload Resume / CV (PDF, DOC, DOCX):</label>
+    <div class="col-sm-5 col-md-3">
       <input id="furesume" class="form-control uploadedFileName" placeholder="No file selected." disabled="disabled" />
       <div class="fileUpload btn-block btn btn-primary">
           <span>Choose File</span>
@@ -721,22 +721,22 @@
     </div>
   </div>
   <div class="form-group">
-    <label for="txtcomments" class="col-sm-2 col-sm-offset-3 control-label">Comments:</label>
-    <div class="col-sm-3">
+    <label for="txtcomments" class="col-sm-4 col-md-2 col-md-offset-3 control-label">Comments:</label>
+    <div class="col-sm-5 col-md-3">
       <textarea name="txtcomments" rows="5" type="text" class="form-control" id="txtcomments"></textarea>
     </div>
   </div>
   <div class="form-group">
 
-    <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label required">Security Code:</label>
-    <div class="col-sm-3">
+    <label for="captcha" class="col-sm-4 col-md-2 col-md-offset-3 control-label required">Security Code:</label>
+    <div class="col-sm-5 col-md-3">
       <img class="img-responsive" id="captcha-placeholder" src="img/captcha_placeholder.png"/>
       <input name="captcha" type="text" class="form-control" id="captcha" placeholder="Security Code">
     </div>
   </div>
 
   <div class="form-group">
-      <div class="col-sm-3 col-sm-offset-5 column apply-now-column">
+      <div class="col-sm-5 col-md-3 col-sm-offset-4 col-md-offset-5 column apply-now-column">
          <a href="careers_applynow.html" class="btn btn-lg btn-success btn-block" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))">Submit</a>
       </div>
   </div>
