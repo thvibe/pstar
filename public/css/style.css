@@ -6306,8 +6306,21 @@ li,
 p {
   font-size: 1.2em;
 }
+#hours h3 {
+  text-indent: 0.5em;
+}
+#hours p {
+  text-indent: -0.1em;
+}
+#hours p {
+  padding-left: 1.5em;
+}
 header {
   background: url(../img/agsquare.png) repeat #ffffff;
+}
+.apply-now-column {
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .res-menu {
   height: 46px;
