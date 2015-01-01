@@ -6302,6 +6302,14 @@ body {
   font-size: 12px;
   font-family: Arial, sans-serif;
 }
+.full-bg {
+  background-image: url(http://lorempixel.com/output/business-q-c-1200-600-4.jpg);
+  height: 300px;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+  background-color: #000;
+}
 li,
 p {
   font-size: 1.2em;
