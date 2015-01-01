@@ -21,8 +21,9 @@ header {
 header,nav,section,article {
     display: block;
 }
-span[data-val-errormessage="Required"] {
+[data-val-errormessage] {
  color:red;
+ font-weight: bold;
 }
 .control-label.required {
  &:before {
@@ -82,7 +83,7 @@ figure {
     margin-bottom: 25px;
 }
 h1,h2,h3,h4,h5,h6 {
-    color: #555555;
+    color: #0079C2;
     font-family: 'Arial', sans-serif;
 }
 h1 {
