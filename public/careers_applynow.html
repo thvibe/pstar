@@ -731,38 +731,16 @@
 
     <label for="captcha" class="col-sm-2 col-sm-offset-3 control-label required">Security Code:</label>
     <div class="col-sm-3">
-      <div class="LBD_CaptchaDiv " id="c_contactform_captchabox_CaptchaDiv" style="width: 280px !important; height: 50px !important; "><!--
-       --><div class="LBD_CaptchaImageDiv" id="c_contactform_captchabox_CaptchaImageDiv" style="width: 250px !important; height: 50px !important;"><!--
-         --><a target="_blank" href="http://captcha.com/asp.net-captcha-info.html" title="BotDetect CAPTCHA ASP.NET Form Validation" onclick="c_contactform_captchabox.OnHelpLinkClick(); return c_contactform_captchabox.FollowHelpLink;"><img class="LBD_CaptchaImage" id="c_contactform_captchabox_CaptchaImage" src="/patientstardotcomnew/(X(1)S(d5smf2prazbs1uhkf0sauwhr))/BotDetectCaptcha.ashx?get=image&amp;c=c_contactform_captchabox&amp;t=88825fa5b0144d8d90766b2af680452c" alt="CAPTCHA"></a><!--
-       --></div><!--
-       --><div class="LBD_CaptchaIconsDiv" id="c_contactform_captchabox_CaptchaIconsDiv" style="width: 24px !important;"><!--
-         --><a class="LBD_ReloadLink" id="c_contactform_captchabox_ReloadLink" href="#" onclick="c_contactform_captchabox.ReloadImage(); this.blur(); return false;" title="Change the CAPTCHA code" style="display: inline-block !important;"><img class="LBD_ReloadIcon" id="c_contactform_captchabox_ReloadIcon" src="/patientstardotcomnew/BotDetectCaptcha.ashx?get=ReloadIcon" alt="Change the CAPTCHA code"></a><!--
-         --><a class="LBD_SoundLink" id="c_contactform_captchabox_SoundLink" href="/patientstardotcomnew/(X(1)S(d5smf2prazbs1uhkf0sauwhr))/BotDetectCaptcha.ashx?get=sound&amp;c=c_contactform_captchabox&amp;t=88825fa5b0144d8d90766b2af680452c&amp;s=kNjkFB2dIs0M6MMZPP%2fzwpmeOayCgv6pmStvPasas%2bpgEym5F2kdLr3Oemi%2b8AmXDMWf%2fKsrXeliKdm1XbsOZg%3d%3d" onclick="c_contactform_captchabox.PlaySound(); this.blur(); return false;" title="Speak the CAPTCHA code"><img class="LBD_SoundIcon" id="c_contactform_captchabox_SoundIcon" src="/patientstardotcomnew/BotDetectCaptcha.ashx?get=SoundIcon" alt="Speak the CAPTCHA code"></a><!--
-         --><div class="LBD_Placeholder" id="c_contactform_captchabox_AudioPlaceholder">&nbsp;</div><!--
-       --></div>
-          <script src="/patientstardotcomnew/BotDetectCaptcha.ashx?get=clientScriptInclude" type="text/javascript"></script>
-          <script type="text/javascript">
-          //<![CDATA[
-            BotDetect.Init('c_contactform_captchabox', '88825fa5b0144d8d90766b2af680452c', null, true, true, true, true, 1200, 7200, 0, true);
-          //]]>
-          </script>
-          <script type="text/javascript">
-          //<![CDATA[
-            try{(function(){var bdrsn = document.createElement('script'); bdrsn.type = 'text/javascript'; bdrsn.async = true; bdrsn.src = document.location.protocol + '//remote.captcha.com/include.js?i=ATABMAEwATMBMAIxNhQqfJFoRv-JH88T9XbBT63mk2kFGw'; var fsn = document.getElementsByTagName('script')[0]; fsn.parentNode.insertBefore(bdrsn, fsn);})();} catch(err){}
-          //]]>
-          </script>
-          <input type="hidden" name="LBD_VCID_c_contactform_captchabox" id="LBD_VCID_c_contactform_captchabox" value="88825fa5b0144d8d90766b2af680452c">
-          <input type="hidden" name="LBD_BackWorkaround_c_contactform_captchabox" id="LBD_BackWorkaround_c_contactform_captchabox" value="1">
-        </div>
+      <img class="img-responsive" id="captcha-placeholder" src="img/captcha_placeholder.png"/>
       <input name="captcha" type="text" class="form-control" id="captcha" placeholder="Security Code">
     </div>
-
   </div>
 
-     </form>
-    </div>
-
-
+  <div class="form-group">
+      <div class="col-sm-3 col-sm-offset-5 column apply-now-column">
+         <a href="careers_applynow.html" class="btn btn-lg btn-success btn-block" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;btnSubmit&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))">Submit</a>
+      </div>
+  </div>
 
      </form>
     </div>
