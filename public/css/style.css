@@ -6302,11 +6302,17 @@ body {
   font-size: 12px;
   font-family: Arial, sans-serif;
 }
+p.lead {
+  font-size: 20px !important;
+}
 li.view.view-fifth {
   margin-right: 0 !important;
   float: left;
   padding-bottom: 20px !important;
   height: 320px;
+}
+#tag p {
+  padding: 15px;
 }
 .view-fifth img {
   width: 256px !important;
